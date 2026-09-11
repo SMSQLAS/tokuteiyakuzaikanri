@@ -378,7 +378,9 @@ fieldset {
 }
 
 .rule-point {
-  float: right;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
   padding: 2px 10px;
   border-radius: 999px;
   color: #fff;
