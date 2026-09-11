@@ -6,8 +6,11 @@ const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxCGQdVIRdGYjocIAdf
 const answerChoices = [
   { value: "1イ", label: "1（イ） 10点" },
   { value: "1ロ", label: "1（ロ） 5点" },
+  { value: "2", label: "2 100点" },
   { value: "3イ", label: "3（イ） 5点" },
   { value: "3ロ", label: "3（ロ） 10点" },
+  { value: "1イ3ロ", label: "1（イ）＋3（ロ）" },
+  { value: "1ロ3ロ", label: "1（ロ）＋3（ロ）" },
   { value: "3イロ", label: "3（イ）＋3（ロ）" },
   { value: "×", label: "算定できない" }
 ];
