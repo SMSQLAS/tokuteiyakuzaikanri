@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>特定薬剤管理指導加算クイズ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section id="startScreen" class="card screen active">
+      <div class="badge">全8問</div>
+      <h1>💊 特定薬剤管理指導加算クイズ</h1>
+      <p class="lead">特定薬剤管理指導加算について、どの加算が算定できるかを確認するクイズです。</p>
+
+      <div class="notice rule-box">
+        <strong>特定薬剤管理指導加算とは</strong>
+        <div class="rule-grid">
+          <div class="rule-item"><span class="rule-name">1（イ）</span><span class="rule-point">10点</span><p>新たに処方された患者に対して必要な指導を行った場合</p><small>お薬手帳で確認出来なくても今までにどこかの病院や薬局で服用していたら算定出来ない</small></div>
+          <div class="rule-item"><span class="rule-name">1（ロ）</span><span class="rule-point">5点</span><p>用法又は用量の変更、副作用の変化等に基づき指導を行った場合</p><small>※1（イ）と1（ロ）は同時算定できない</small></div>
+          <div class="rule-item"><span class="rule-name">2</span><span class="rule-point">100点</span><p>抗悪性腫瘍剤を注射された患者に対して、薬局薬剤師が服薬管理・服薬サポート・体調管理を行った場合</p></div>
+          <div class="rule-item"><span class="rule-name">3（イ）</span><span class="rule-point">5点</span><p>安全管理等に関する資料（RMP）を最初に用いた場合</p></div>
+          <div class="rule-item"><span class="rule-name">3（ロ）</span><span class="rule-point">10点</span><p>選定療養（選定療養になっている先発）・医薬品の選択（メーカー変更）に係わる情報が特に必要な場合</p><small>※3（イ）と3（ロ）は同時算定できる</small></div>
+        </div>
+      </div>
+
+      <p class="question-count">算定できる加算を選んでください</p>
+      <button id="startButton" class="primary-button" type="button">開始する</button>
+    </section>
+
+    <section id="quizScreen" class="card screen">
+      <div class="progress-row">
+        <span id="progressText">問題1 / 8</span>
+        <span id="scoreText">正解 0</span>
+      </div>
+      <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+
+      <div id="questionText" class="question"></div>
+      <div id="answerButtons" class="answer-buttons answer-grid"></div>
+
+      <div id="feedback" class="feedback hidden" aria-live="polite"></div>
+      <button id="nextButton" class="primary-button hidden" type="button">次の問題へ</button>
+    </section>
+
+    <section id="resultScreen" class="card screen">
+      <div class="badge">クイズ終了！</div>
+      <h2>お疲れさまでした😊</h2>
+      <p id="resultScore" class="result-score"></p>
+
+      <form id="resultForm" novalidate>
+        <label>
+          店舗名
+          <input id="storeName" name="storeName" type="text" autocomplete="organization" required>
+        </label>
+
+        <label>
+          名前
+          <input id="userName" name="userName" type="text" autocomplete="name" required>
+        </label>
+
+        <fieldset>
+          <legend>このクイズの難易度はどうでしたか？</legend>
+          <label class="radio-label"><input type="radio" name="difficulty" value="簡単" required> 簡単</label>
+          <label class="radio-label"><input type="radio" name="difficulty" value="ちょうどいい"> ちょうどいい</label>
+          <label class="radio-label"><input type="radio" name="difficulty" value="難しい"> 難しい</label>
+        </fieldset>
+
+        <p id="formError" class="form-error hidden"></p>
+        <button id="sendButton" class="primary-button" type="submit">結果を送信する</button>
+      </form>
+
+      <div id="sendStatus" class="send-status hidden" aria-live="polite"></div>
+      <button id="retryButton" class="secondary-button" type="button" disabled>もう一度する</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
