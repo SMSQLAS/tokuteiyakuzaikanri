@@ -193,7 +193,7 @@ h2 {
 
 .answer-buttons {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 14px;
   margin-top: 20px;
 }
