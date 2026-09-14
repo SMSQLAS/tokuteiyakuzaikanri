@@ -449,3 +449,8 @@ fieldset {
     padding: 18px 15px;
   }
 }
+.group-title {
+text-align: left;
+font-size: 1.35rem;
+margin: 0 0 14px 0;
+}
