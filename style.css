@@ -449,8 +449,9 @@ fieldset {
     padding: 18px 15px;
   }
 }
-.group-title {
-text-align: left;
-font-size: 1.35rem;
-margin: 0 0 14px 0;
+h2.group-title {
+text-align: left !important;
+font-size: 1.2rem !important;
+margin: 0 0 14px 0 !important;
+line-height: 1.3;
 }
