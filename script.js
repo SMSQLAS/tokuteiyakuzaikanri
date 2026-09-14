@@ -54,7 +54,7 @@ const questions = [
   {
     text: `<strong>問題8</strong><p>Ⅱ型糖尿病でジャデアンスが処方された時、RMP資材対象か。</p>`,
     answer: "×",
-    explanation: "対象ではありません。原稿の正解は「×」です。"
+    explanation: "対象ではありません。RMP資材対象の病名が慢性心不全・慢性腎臓病です。"
   }
 ];
 
