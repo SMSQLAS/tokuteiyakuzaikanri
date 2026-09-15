@@ -3,83 +3,113 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>特定薬剤管理指導加算クイズ</title>
+  <title>薬学的有害事象等防止加算クイズ</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <main class="app-shell">
-    <section id="startScreen" class="card screen active">
-      <div class="badge">全8問</div>
-      <h1>💊 特定薬剤管理指導加算クイズ</h1>
-      <p class="lead">特定薬剤管理指導加算について、どの加算が算定できるかを確認するクイズです。</p>
 
-<div class="notice rule-box">
-<div class="rule-group">
-<h2 class="group-title">特定薬剤管理指導加算1</h2>
- 
-<div class="rule-row">
-<span class="rule-name">イ</span>
-<span class="rule-point">10点</span>
-<p>新たに処方された患者に対して必要な指導を行った場合</p>
-<small>お薬手帳で確認出来なくても今までにどこかの病院や薬局で服用していたら算定出来ない</small>
-</div>
- 
-<div class="rule-row">
-<span class="rule-name">ロ</span>
-<span class="rule-point">5点</span>
-<p>用法又は用量の変更、副作用の変化等に基づき指導を行った場合</p>
-</div>
- 
-<p class="rule-note">※1（イ）と1（ロ）は同時算定できない</p>
-</div>
-</div>
- 
- 
-<div class="notice rule-box">
-<div class="rule-group">
-<h2 class="group-title">特定薬剤管理指導加算2</h2>
- 
-<div class="rule-row">
-<span class="rule-point">100点</span>
-<p>抗悪性腫瘍剤を注射された患者に対して、薬局薬剤師が服薬管理・服薬サポート・体調管理を行った場合</p>
-</div>
-</div>
-</div>
- 
- 
-<div class="notice rule-box">
-<div class="rule-group">
-<h2 class="group-title">特定薬剤管理指導加算3</h2>
- 
-<div class="rule-row">
-<span class="rule-name">イ</span>
-<span class="rule-point">5点</span>
-<p>安全管理等に関する資料（RMP）を最初に用いた場合</p>
-</div>
- 
-<div class="rule-row">
-<span class="rule-name">ロ</span>
-<span class="rule-point">10点</span>
-<p>選定療養（選定療養になっている先発）・医薬品の選択（メーカー変更）に係わる情報が特に必要な場合</p>
-</div>
- 
-<p class="rule-note">※3（イ）と3（ロ）は同時算定できる</p>
-</div>
-</div>
- 
-      <p class="question-count">算定できる加算を選んでください</p>
+<body>
+  <aside class="desktop-code-guide" aria-label="区分・摘要コード早見表">
+    <div class="guide-box">
+      <h3>💡 早見表</h3>
+
+      <div class="guide-section">
+        <strong>薬学的有害事象等防止加算の区分</strong>
+        <p><b>イ</b>　在宅患者・処方箋交付前の提案</p>
+        <p><b>ロ</b>　在宅患者・処方箋交付後の照会</p>
+        <p><b>ハ</b>　外来・かかりつけ薬剤師による照会</p>
+        <p><b>ニ</b>　外来・上記以外の薬剤師による照会</p>
+      </div>
+
+      <div class="guide-section">
+        <strong>レセコンのコードNo.〈内容の要点〉</strong>
+        <p><b>901</b>　重複投薬</p>
+        <p><b>902</b>　相互作用</p>
+        <p><b>903</b>　アレルギー・副作用歴</p>
+        <p><b>904</b>　年齢・体重</p>
+        <p><b>905</b>　肝・腎機能等</p>
+        <p><b>906</b>　授乳・妊婦</p>
+        <p><b>907</b>　その他</p>
+      </div>
+
+      <div class="guide-section">
+        <strong>レセコンのコードNo.〈イの場合の変更内容〉</strong>
+        <p><b>1002</b>　同種同効薬への変更</p>
+        <p><b>1003</b>　剤形変更</p>
+        <p><b>1004</b>　用量変更</p>
+        <p><b>1005</b>　用法変更</p>
+        <p><b>1006</b>　その他</p>
+      </div>
+    </div>
+  </aside>
+
+  <main class="app-shell">
+
+    <section id="startScreen" class="card screen active">
+      <div class="badge">令和8年度対応</div>
+      <h1>💊 薬学的有害事象等防止加算クイズ</h1>
+
+      <p class="lead">
+        「イ・ロ・ハ・ニ」の区分と、<br>
+        レセプト摘要で使う内容の要点を、実際の場面を想定して確認してみましょう。
+      </p>
+
+      <div class="notice">
+        <strong>このクイズのポイント</strong>
+        <p>① 在宅患者かどうか</p>
+        <p>② 処方箋交付前の提案か、交付後の照会か</p>
+        <p>③ かかりつけ薬剤師による照会か</p>
+        <p>④ 内容の要点は 901～907 のどれか</p>
+        <p>⑤ 「イ」の場合は、変更内容 1002～1006 も確認</p>
+      </div>
+
+      <div class="code-guide">
+        <strong>内容の要点</strong>
+        <p>901 重複投薬 ／ 902 相互作用 ／ 903 アレルギー・副作用歴</p>
+        <p>904 年齢・体重 ／ 905 肝・腎機能等 ／ 906 授乳・妊婦 ／ 907 その他</p>
+      </div>
+
+      <p class="question-count">全10問</p>
       <button id="startButton" class="primary-button" type="button">開始する</button>
     </section>
 
     <section id="quizScreen" class="card screen">
+
+      <details class="mobile-code-guide">
+        <summary>💡 早見表を見る</summary>
+
+          <h4>薬学的有害事象等防止加算の区分</h4>
+          <p><strong>イ</strong>　在宅患者・処方箋交付前の提案</p>
+          <p><strong>ロ</strong>　在宅患者・処方箋交付後の照会</p>
+          <p><strong>ハ</strong>　外来・かかりつけ薬剤師による照会</p>
+          <p><strong>ニ</strong>　外来・上記以外の薬剤師による照会</p>
+
+          <hr>
+          <h4>レセコンのコードNo.〈内容の要点〉</h4>
+          <p><strong>901</strong> 重複投薬 ／ <strong>902</strong> 相互作用</p>
+          <p><strong>903</strong> アレルギー・副作用歴 ／ <strong>904</strong> 年齢・体重</p>
+          <p><strong>905</strong> 肝・腎機能等 ／ <strong>906</strong> 授乳・妊婦</p>
+          <p><strong>907</strong> その他</p>
+
+          <hr>
+          <h4>レセコンのコードNo.〈イの場合の変更内容〉</h4>
+          <p><strong>1002</strong> 同種同効薬への変更</p>
+          <p><strong>1003</strong> 剤形変更 ／ <strong>1004</strong> 用量変更</p>
+          <p><strong>1005</strong> 用法変更 ／ <strong>1006</strong> その他</p>
+        </div>
+      </details>
+
       <div class="progress-row">
-        <span id="progressText">問題1 / 8</span>
+        <span id="progressText">問題1 / 10</span>
         <span id="scoreText">正解 0</span>
       </div>
-      <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+
+      <div class="progress-track">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
 
       <div id="questionText" class="question"></div>
-      <div id="answerButtons" class="answer-buttons answer-grid"></div>
+
+      <div id="answerButtons" class="answer-buttons"></div>
 
       <div id="feedback" class="feedback hidden" aria-live="polite"></div>
       <button id="nextButton" class="primary-button hidden" type="button">次の問題へ</button>
@@ -89,6 +119,7 @@
       <div class="badge">クイズ終了！</div>
       <h2>お疲れさまでした😊</h2>
       <p id="resultScore" class="result-score"></p>
+      <p id="wrongAnswerText" class="wrong-answer-text"></p>
 
       <form id="resultForm" novalidate>
         <label>
@@ -103,9 +134,18 @@
 
         <fieldset>
           <legend>このクイズの難易度はどうでしたか？</legend>
-          <label class="radio-label"><input type="radio" name="difficulty" value="簡単" required> 簡単</label>
-          <label class="radio-label"><input type="radio" name="difficulty" value="ちょうどいい"> ちょうどいい</label>
-          <label class="radio-label"><input type="radio" name="difficulty" value="難しい"> 難しい</label>
+          <label class="radio-label">
+            <input type="radio" name="difficulty" value="簡単" required>
+            簡単
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="difficulty" value="ちょうどいい">
+            ちょうどいい
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="difficulty" value="難しい">
+            難しい
+          </label>
         </fieldset>
 
         <p id="formError" class="form-error hidden"></p>
@@ -115,6 +155,7 @@
       <div id="sendStatus" class="send-status hidden" aria-live="polite"></div>
       <button id="retryButton" class="secondary-button" type="button" disabled>もう一度する</button>
     </section>
+
   </main>
 
   <script src="script.js"></script>
