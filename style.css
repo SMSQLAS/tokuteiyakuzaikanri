@@ -461,5 +461,53 @@ max-width: 760px;
 margin-left: auto;
 margin-right: auto;
 }
+/* ===== 左側の早見表 ===== */
+.quick-guide {
+position: fixed;
+top: 110px;
+left: 25px;
  
+width: 330px;
+max-height: calc(100vh - 140px);
+overflow-y: auto;
+ 
+background: #f7f3ff;
+border-left: 6px solid var(--purple);
+border-radius: 18px;
+padding: 18px;
+ 
+box-sizing: border-box;
+z-index: 10;
+}
+ 
+.quick-guide h2 {
+margin: 0 0 16px;
+color: var(--purple-dark);
+font-size: 1.3rem;
+}
+ 
+.quick-guide h3 {
+margin: 0 0 10px;
+font-size: 1.05rem;
+color: var(--purple-dark);
+}
+ 
+.guide-group {
+background: white;
+border-radius: 14px;
+padding: 14px;
+margin-bottom: 14px;
+}
+ 
+.guide-group p {
+margin: 7px 0;
+line-height: 1.55;
+font-size: 0.88rem;
+}
+ 
+.guide-group small {
+display: block;
+margin-top: 10px;
+line-height: 1.5;
+} 
 
