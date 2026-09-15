@@ -246,10 +246,7 @@ async function submitResult(event) {
   }
 }
 
-startButton.addEventListener("click", () => {
-document.body.classList.add("quiz-started");
-startQuiz();
-});
+startButton.addEventListener("click", startQuiz);
 nextButton.addEventListener("click", goNext);
 resultForm.addEventListener("submit", submitResult);
 retryButton.addEventListener("click", startQuiz);
