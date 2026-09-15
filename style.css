@@ -471,35 +471,3 @@ body.quiz-mode .desktop-code-guide {
     display: block;
   }
 }
-
-
-/* ===== PC：左に早見表、右にクイズ ===== */
-@media (min-width: 1000px) {
-  body.quiz-mode .app-shell {
-    width: 700px;
-    margin-left: calc(50% - 180px);
-    margin-right: auto;
-  }
-
-  body.quiz-mode .desktop-code-guide {
-    display: block;
-    position: fixed;
-    left: calc(50% - 600px);
-    top: 90px;
-    width: 360px;
-  }
-
-  body.quiz-mode .mobile-code-guide {
-    display: none;
-  }
-}
-
-@media (max-width: 999px) {
-  body.quiz-mode .desktop-code-guide {
-    display: none;
-  }
-
-  body.quiz-mode .mobile-code-guide {
-    display: block;
-  }
-}
