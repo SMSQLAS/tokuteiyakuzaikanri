@@ -511,12 +511,10 @@ margin-top: 10px;
 line-height: 1.5;
 } 
 
-/* 最初のページでは早見表を隠す */
 .quick-guide {
-display: none;
+display: none !important;
 }
  
-/* クイズ開始後だけ早見表を表示 */
-body:has(#quizScreen.active) .quick-guide {
-display: block;
+body.quiz-started .quick-guide {
+display: block !important;
 }
