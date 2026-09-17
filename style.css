@@ -459,8 +459,8 @@ line-height: 1.3;
 
 /* 2ページ目以降のクイズ全体 */
 #quizScreen {
-  width: 760px !important;
-  max-width: 760px !important;
+  width: 650px !important;
+  max-width: 650px !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
