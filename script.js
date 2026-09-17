@@ -84,6 +84,7 @@ function showScreen(screen) {
   [startScreen, quizScreen, resultScreen].forEach((item) => {
     item.classList.toggle("active", item === screen);
   });
+  document.body.classList.toggle("quiz-mode", screen === quizScreen);
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
