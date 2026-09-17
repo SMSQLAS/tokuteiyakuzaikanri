@@ -476,3 +476,38 @@ line-height: 1.3;
   width: 100% !important;
   min-width: 0 !important;
 }
+/* ===== クイズ＋早見表 横並び ===== */
+ 
+.quiz-layout {
+display: flex;
+align-items: flex-start;
+justify-content: center;
+gap: 20px;
+width: 100%;
+max-width: 1050px;
+margin: 0 auto;
+}
+ 
+/* 左側：早見表 */
+.quick-guide {
+width: 280px;
+flex-shrink: 0;
+}
+ 
+/* 右側：クイズ */
+#quizScreen {
+width: 650px;
+flex-shrink: 0;
+}
+ 
+/* スマホでは縦並び */
+@media (max-width: 800px) {
+.quiz-layout {
+display: block;
+}
+ 
+.quick-guide,
+#quizScreen {
+width: 100%;
+}
+}
