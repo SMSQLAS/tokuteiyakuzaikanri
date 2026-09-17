@@ -566,10 +566,22 @@ color: #555;
 }
  
 /* 画面が狭いときはクイズの上へ */
-@media (max-width: 1050px) {
-.quick-guide {
-position: static;
-width: 100%;
-margin-bottom: 15px;
+/* ===== 早見表をクイズの左横に固定 ===== */
+ 
+#quizScreen {
+position: relative !important;
+overflow: visible !important;
 }
+ 
+#quickGuide {
+position: absolute !important;
+ 
+/* クイズ本体の左外側へ出す */
+right: calc(100% + 20px) !important;
+top: 0 !important;
+ 
+width: 260px !important;
+margin: 0 !important;
+ 
+box-sizing: border-box;
 }
